@@ -11,3 +11,9 @@
 body {
   font-family: Vazir;
 }
+
+@layer components {
+  .section-container {
+    @apply px-8  py-4 container mx-auto md:px-2;
+  }
+}
