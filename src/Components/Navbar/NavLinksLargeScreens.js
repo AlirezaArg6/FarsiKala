@@ -16,9 +16,9 @@ export const NavLinksLargeScreens = () => {
               {link.submenu && <FiChevronDown className="mr-1" />}
             </a>
             {/* border */}
-            <div className="group-hover:border border-mainColor mt-2 duration-150"></div>
+            <div className="border invisible border-mainColor mt-2 duration-200 group-hover:visible"></div>
             {link.submenu && (
-              <div className="absolute -bottom-[64.5px] w-full  bg-slate-200 text-white invisible opacity-0">
+              <div className="hidden absolute -bottom-[64.5px] w-full  bg-slate-200 text-white invisible opacity-0">
                 sdadsa
                 <br />
                 <br />

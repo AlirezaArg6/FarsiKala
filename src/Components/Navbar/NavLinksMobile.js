@@ -3,8 +3,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { navLinks } from "./navLinksData";
 
 export const NavLinksMobile = () => {
-  const iconname = "RxHamburgerMenu";
-
   return (
     <>
       <nav>
