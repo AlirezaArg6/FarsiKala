@@ -11,7 +11,7 @@ import {
 export const Footer = () => {
   return (
     <footer id="footer" className="bg-[#eeeeee]">
-      <div className="section-container py-10">
+      <div className="px-8   container mx-auto mt-6 md:px-2 py-10">
         {/* logo and up btn */}
         <div className="flex flex-col justify-between items-center md:flex-row space-y-6 ">
           {/* right side */}

@@ -24,7 +24,7 @@ export default function Navbar() {
       {/* top bar */}
       <div className="shadow-lg lg:shadow-none">
         <div className="">
-          <div className="flex justify-between items-center section-container">
+          <div className="flex justify-between items-center section-container my-0">
             {/* right side */}
             <div className="flex items-center">
               <RxHamburgerMenu

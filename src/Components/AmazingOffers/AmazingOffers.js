@@ -13,87 +13,89 @@ export const AmazingOffers = () => {
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
   return (
-    <section id="amazingOffers" className=" p-4">
-      <div className="section-container bg-mainColor rounded-lg p-4">
-        <div className="flex ">
-          {/* amazing offer banner */}
-          <div className="flex flex-col justify-between items-center  w-2/5 md:w-[24%] lg:w-[12%] ">
-            <img
-              src="amazing-offers.png"
-              alt=""
-              className="h-[260px] w-34 md:h-[250px]"
-            />
-            <a
-              href=""
-              className="flex text-white  items-center text:xs md:text-lg"
-            >
-              نمایش همه
-              <BiChevronLeft className="mr-2" size={20} />
-            </a>
-          </div>{" "}
-          {/* swiper */}
-          <Swiper
-            freeMode={true}
-            breakpoints={{
-              0: { slidesPerView: 1, spaceBetween: 8 },
-              768: { slidesPerView: 2, spaceBetween: 8 },
-              1024: { slidesPerView: 4, spaceBetween: 8 },
-              1500: { slidesPerView: 5, spaceBetween: 8 },
-            }}
-            grabCursor={true}
-            onSwiper={(swiper) => {
-              // Delay execution for the refs to be defined
-              setTimeout(() => {
-                // Override prevEl & nextEl now that refs are defined
-                swiper.params.navigation.prevEl = navigationPrevRef.current;
-                swiper.params.navigation.nextEl = navigationNextRef.current;
+    <section id="amazingOffers" className="mb-6 ">
+      <div className="section-container  ">
+        <div className="bg-mainColor p-4  rounded-2xl">
+          <div className="flex ">
+            {/* amazing offer banner */}
+            <div className="flex flex-col justify-between items-center  w-2/5 md:w-[24%] lg:w-[12%] ">
+              <img
+                src="amazing-offers.png"
+                alt=""
+                className="h-[260px] w-34 md:h-[250px]"
+              />
+              <a
+                href=""
+                className="flex text-white items-center text:xs md:text-lg"
+              >
+                نمایش همه
+                <BiChevronLeft className="mr-2" size={20} />
+              </a>
+            </div>{" "}
+            {/* swiper */}
+            <Swiper
+              freeMode={true}
+              breakpoints={{
+                0: { slidesPerView: 1, spaceBetween: 8 },
+                768: { slidesPerView: 2, spaceBetween: 8 },
+                1024: { slidesPerView: 4, spaceBetween: 8 },
+                1500: { slidesPerView: 5, spaceBetween: 8 },
+              }}
+              grabCursor={true}
+              onSwiper={(swiper) => {
+                // Delay execution for the refs to be defined
+                setTimeout(() => {
+                  // Override prevEl & nextEl now that refs are defined
+                  swiper.params.navigation.prevEl = navigationPrevRef.current;
+                  swiper.params.navigation.nextEl = navigationNextRef.current;
 
-                // Re-init navigation
-                swiper.navigation.destroy();
-                swiper.navigation.init();
-                swiper.navigation.update();
-              });
-            }}
-            scrollbar={{ draggable: true }}
-            loop={true}
-            modules={[Navigation]}
-            className="mySwiper w-3/5 md:w-[76%] lg:w-[88%]"
-          >
-            <SwiperSlide>
-              <ProductBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProductBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProductBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProductBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProductBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProductBox />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProductBox />
-            </SwiperSlide>
+                  // Re-init navigation
+                  swiper.navigation.destroy();
+                  swiper.navigation.init();
+                  swiper.navigation.update();
+                });
+              }}
+              scrollbar={{ draggable: true }}
+              loop={true}
+              modules={[Navigation]}
+              className="mySwiper w-3/5 md:w-[76%] lg:w-[88%]"
+            >
+              <SwiperSlide>
+                <ProductBox />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProductBox />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProductBox />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProductBox />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProductBox />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProductBox />
+              </SwiperSlide>
+              <SwiperSlide>
+                <ProductBox />
+              </SwiperSlide>
 
-            <button
-              ref={navigationNextRef}
-              className="absolute top-[50%] translate-y-[-50%] right-[20px] border flex justify-center items-center p-2 z-10 text-3xl w-10 h-10 bg-white rounded-full"
-            >
-              <GrNext />
-            </button>
-            <button
-              ref={navigationPrevRef}
-              className="absolute top-[50%] translate-y-[-50%] left-[20px] border flex justify-center items-center p-2 z-10 text-3xl w-10 h-10 bg-white rounded-full "
-            >
-              <GrPrevious color="red" />
-            </button>
-          </Swiper>
+              <button
+                ref={navigationNextRef}
+                className="absolute top-[50%] translate-y-[-50%] right-[20px] border flex justify-center items-center p-2 z-10 text-3xl w-10 h-10 bg-white rounded-full"
+              >
+                <GrNext />
+              </button>
+              <button
+                ref={navigationPrevRef}
+                className="absolute top-[50%] translate-y-[-50%] left-[20px] border flex justify-center items-center p-2 z-10 text-3xl w-10 h-10 bg-white rounded-full "
+              >
+                <GrPrevious color="red" />
+              </button>
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>
