@@ -2,11 +2,11 @@ import React from "react";
 
 export const ProductBox = () => {
   return (
-    <div className="bg-white rounded-lg  overflow-hidden h-full  items-center justify-between  py-4 flex flex-col space-y-8 text-center md:max-w-auto">
+    <div className="bg-white rounded-lg  overflow-hidden   items-center justify-between  py-4 flex flex-col space-y-8 text-center md:max-w-auto">
       <img
         src="assets/images/products/6.jpg"
         alt=""
-        className="w-[212px] h-[212]"
+        className="w-[212px] h-[212px]"
       />
       {/* product infos */}
       <div>

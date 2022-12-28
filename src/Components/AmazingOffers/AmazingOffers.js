@@ -13,15 +13,19 @@ export const AmazingOffers = () => {
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
   return (
-    <section id="amazingOffers" className="mb-6 p-4">
+    <section id="amazingOffers" className=" p-4">
       <div className="section-container bg-mainColor rounded-lg p-4">
         <div className="flex ">
           {/* amazing offer banner */}
-          <div className="flex flex-col space-y-10 items-center w-2/5 lg:w-[12%]">
-            <img src="amazing-offers.png" alt="" className="h-72 w-34" />
+          <div className="flex flex-col justify-between items-center  w-2/5 md:w-[24%] lg:w-[12%] ">
+            <img
+              src="amazing-offers.png"
+              alt=""
+              className="h-[260px] w-34 md:h-[250px]"
+            />
             <a
               href=""
-              className="flex text-white items-center text:xs md:text-lg"
+              className="flex text-white  items-center text:xs md:text-lg"
             >
               نمایش همه
               <BiChevronLeft className="mr-2" size={20} />
@@ -53,7 +57,7 @@ export const AmazingOffers = () => {
             scrollbar={{ draggable: true }}
             loop={true}
             modules={[Navigation]}
-            className="mySwiper w-3/5 lg:w-[88%]"
+            className="mySwiper w-3/5 md:w-[76%] lg:w-[88%]"
           >
             <SwiperSlide>
               <ProductBox />
