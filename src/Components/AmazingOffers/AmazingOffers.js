@@ -17,7 +17,7 @@ export const AmazingOffers = () => {
       <div className="section-container bg-mainColor rounded-lg p-4">
         <div className="flex ">
           {/* amazing offer banner */}
-          <div className="flex flex-col space-y-6 items-center w-1/3 lg:w-[17%]">
+          <div className="flex flex-col space-y-10 items-center w-2/5 lg:w-[12%]">
             <img src="amazing-offers.png" alt="" className="h-72 w-34" />
             <a
               href=""
@@ -53,7 +53,7 @@ export const AmazingOffers = () => {
             scrollbar={{ draggable: true }}
             loop={true}
             modules={[Navigation]}
-            className="mySwiper w-2/3 lg:w-[83%]"
+            className="mySwiper w-3/5 lg:w-[88%]"
           >
             <SwiperSlide>
               <ProductBox />
