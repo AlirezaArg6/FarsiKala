@@ -11,7 +11,7 @@ import {
 export const Footer = () => {
   return (
     <footer id="footer" className="bg-[#eeeeee]">
-      <div className="section-container py-20">
+      <div className="section-container py-10">
         {/* logo and up btn */}
         <div className="flex flex-col justify-between items-center md:flex-row space-y-6 ">
           {/* right side */}
@@ -24,7 +24,15 @@ export const Footer = () => {
           </div>
           {/* left side */}
           <div>
-            <button className="flex border border-black px-6 py-3 rounded text-sm text-gray-500">
+            <button
+              className="flex border border-black px-6 py-3 rounded text-sm text-gray-600"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+            >
               بازگشت به بالا
               <BiChevronUp className="mr-2" size={20} />
             </button>
