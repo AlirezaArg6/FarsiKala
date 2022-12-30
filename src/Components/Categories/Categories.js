@@ -5,9 +5,7 @@ export const Categories = () => {
     <section id="categories">
       {/* container */}
       <div className="section-container">
-        <h3 className="text-2xl text-gray-600 mb-6 text-center">
-          دسته بندی های فارسی کالا
-        </h3>
+        <h3 className="section-header">دسته بندی های فارسی کالا</h3>
         {/* items */}
         <div className="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-6 ">
           {/* item 1 */}

@@ -7,7 +7,7 @@ export const NavLinksLargeScreens = () => {
     <nav>
       <ul className="flex">
         {navLinks.map((link) => (
-          <li className="group  p-2 ">
+          <li className="group  p-2 pb-0">
             <a
               href=""
               className="flex items-center text-sm text-gray-700 duration-200 group-hover:text-mainColor "
