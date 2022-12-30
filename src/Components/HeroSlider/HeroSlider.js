@@ -13,7 +13,7 @@ export const HeroSlider = () => {
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
   return (
-    <section id="heroSlider" className="hidden lg:block -mt-2">
+    <section id="heroSlider" className="hidden lg:block -mt-2 ">
       <Swiper
         freeMode={true}
         grabCursor={true}
@@ -39,16 +39,16 @@ export const HeroSlider = () => {
         modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper relative"
       >
-        <SwiperSlide>
+        <SwiperSlide className="overflow-hidden">
           <img src="assets/images/hero/1-scaled-1.jpg" alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="overflow-hidden">
           <img src="assets/images/hero/2-scaled-1.jpg" alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="overflow-hidden">
           <img src="assets/images/hero/3-scaled-1.jpg" alt="" />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="overflow-hidden">
           <img src="assets/images/hero/47-scaled-1.jpg" alt="" />
         </SwiperSlide>
         <button

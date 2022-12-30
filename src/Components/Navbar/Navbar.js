@@ -22,9 +22,9 @@ export default function Navbar() {
   return (
     <>
       {/* top bar */}
-      <div className="shadow-lg lg:shadow-none">
-        <div className="">
-          <div className="flex justify-between items-center section-container my-0">
+      <div className="shadow-lg  ">
+        <div className="fixed right-0 left-0 top-0 bg-white shadow-xl lg:shadow-none z-20 lg:relative">
+          <div className="flex  justify-between items-center  section-container my-0 ">
             {/* right side */}
             <div className="flex items-center">
               <RxHamburgerMenu
@@ -62,7 +62,7 @@ export default function Navbar() {
           <div className="border-b border-gray-300"></div>
           {/* large screen menus and submenus */}
           {/* container */}
-          <div className="hidden container mx-auto px-8 pt-4  justify-between relative lg:flex lg:px-2">
+          <div className="hidden container mx-auto px-8 pt-4  justify-between relative lg:flex lg:px-2 ">
             <NavLinksLargeScreens />
             <p className="text-sm text-gray-600">
               ارسال رایگان برای سفارش های بالا 200 هزار تومان
@@ -79,7 +79,7 @@ export default function Navbar() {
       <div
         className={`fixed top-0 ${
           shouldMenuExpanded ? "right-0" : "-right-[100%]"
-        }  w-[70%] p-10 h-screen bg-white shadow-2xl z-10 duration-300 md:w-[60%] lg:hidden`}
+        }  w-[70%] p-10 h-screen bg-white shadow-2xl z-50 duration-300 md:w-[60%] lg:hidden`}
       >
         {/* close btn */}
         <div className="flex justify-between w-full">
@@ -94,47 +94,6 @@ export default function Navbar() {
             />
           </button>
         </div>
-
-        {/* <nav>
-          <ul className="flex flex-col py-14">
-            <li className="py-4 border-t border-b">
-              <a href="" className="flex items-center">
-                <GoHome size={22} className="ml-2" />
-                دموهای اصلی
-              </a>
-            </li>
-            <li className="py-4 border-b">
-              <a href="" className="flex items-center">
-                <BsShopWindow size={22} className="ml-2" />
-                صفحه فروشگاه
-              </a>
-            </li>
-            <li className="py-4 border-b">
-              <a href="" className="flex items-center">
-                <VscCopy size={22} className="ml-2" />
-                نمونه صفحات
-              </a>
-            </li>
-            <li className="py-4 border-b">
-              <a href="" className="flex items-center">
-                <RiFileCopy2Line size={22} className="ml-2" />
-                وبلاگ
-              </a>
-            </li>
-            <li className="py-4 border-b">
-              <a href="" className="flex items-center">
-                <RiErrorWarningLine size={22} className="ml-2" />
-                درباره ما
-              </a>
-            </li>
-            <li className="py-4 border-b">
-              <a href="" className="flex items-center">
-                <MdOutlineSettingsPhone size={22} className="ml-2" />
-                تماس با ما
-              </a>
-            </li>
-          </ul>
-        </nav> */}
         <NavLinksMobile />
       </div>
     </>

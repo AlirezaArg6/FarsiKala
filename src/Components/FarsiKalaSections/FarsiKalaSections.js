@@ -2,7 +2,7 @@ import React from "react";
 
 export const FarsiKalaSections = () => {
   return (
-    <section id="farsikalaSections">
+    <section id="farsikalaSections" className="pt-[65px] lg:pt-0">
       <div className="container mx-auto section-container lg:py-8">
         <div className="grid grid-cols-3 justify-center gap-4 md:grid-cols-4 lg:grid-cols-8">
           {/* farsikal boxes */}
