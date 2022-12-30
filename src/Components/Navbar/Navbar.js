@@ -33,11 +33,7 @@ export default function Navbar() {
                 onClick={() => setShouldMenuExpanded(true)}
               />
               <a href="" className="flex items-center" className="mr-2">
-                <img
-                  src="./icon.png"
-                  alt=""
-                  className="w-36 lg:w-44 md:w-40 "
-                />
+                <img src="/icon.png" alt="" className="w-36 lg:w-44 md:w-40 " />
               </a>
               {/* search input */}
               <div

@@ -16,7 +16,7 @@ export const Footer = () => {
         <div className="flex flex-col justify-between items-center md:flex-row space-y-6 ">
           {/* right side */}
           <div className="">
-            <img src="farsikala.png" alt="" className="w-40 mx-auto md:mx-0" />
+            <img src="/farsikala.png" alt="" className="w-40 mx-auto md:mx-0" />
             <p className="text-gray-500 text-sm mt-4 font-light">
               تلفن پشتیبانی: 12345678 - ۰۲۱ | 123456789 - ۰۲۱ | هفت روز هفته، ۲۴
               ساعت شبانه‌روز پاسخگوی شما هستیم.
@@ -46,7 +46,7 @@ export const Footer = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 158 106"
-              className="w-[150px]  md:h-20 md:w-20 object-cover "
+              className="w-[150px]  md:h-20 md:w-20 object-cover md:mt-3"
             >
               <g fill="none" fill-rule="evenodd">
                 <path
@@ -101,7 +101,7 @@ export const Footer = () => {
               width="117"
               height="120"
               viewBox="0 0 158 106"
-              className=" object-contain flex items-center justify-center w-20 h-20"
+              className=" object-contain flex items-center justify-center w-20 h-20 md:mt-3"
             >
               <g fill="none" fill-rule="evenodd">
                 <path
@@ -373,7 +373,7 @@ export const Footer = () => {
           {/* right side */}
           <div className="flex items-center">
             <img
-              src="assets/images/downloads/mobile-logo.png"
+              src="/assets/images/downloads/mobile-logo.png"
               alt=""
               className="w-14 md:w-20"
             />
@@ -383,28 +383,28 @@ export const Footer = () => {
           <div className="grid grid-cols-2 gap-2 mt-4 md:mt-0 md:grid-cols-4">
             <a href="#">
               <img
-                src="assets/images/downloads/780.png"
+                src="/assets/images/downloads/780.png"
                 alt=""
                 className="w-44 "
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/downloads/7860.png"
+                src="/assets/images/downloads/7860.png"
                 alt=""
                 className="w-44 "
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/downloads/401848fb-copy.png"
+                src="/assets/images/downloads/401848fb-copy.png"
                 alt=""
                 className="w-44 "
               />
             </a>
             <a href="#">
               <img
-                src="assets/images/downloads/401848fb.png"
+                src="/assets/images/downloads/401848fb.png"
                 alt=""
                 className="w-44"
               />
@@ -432,19 +432,19 @@ export const Footer = () => {
 
           <div className="flex flex-col  justify-end items-center w-full md:w-1/2 md:flex-row">
             <div className="mt-4 md:mt-0">
-              <img src="assets/images/Enemads/6e2d6b38.png" alt="" />
+              <img src="/assets/images/Enemads/6e2d6b38.png" alt="" />
             </div>
             {/* images box  */}
             <div className="flex mt-2 md:mt-0">
               <div className="flex items-center">
                 <img
-                  src="assets/images/Enemads/236e437c.png"
+                  src="/assets/images/Enemads/236e437c.png"
                   alt=""
                   className="mx-2 "
                 />
               </div>
               <div className="">
-                <img src="assets/images/Enemads/logo (1).png" alt="" />
+                <img src="/assets/images/Enemads/logo (1).png" alt="" />
               </div>
             </div>
           </div>
