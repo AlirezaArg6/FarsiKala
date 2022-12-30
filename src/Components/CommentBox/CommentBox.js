@@ -2,7 +2,7 @@ import React from "react";
 
 export const CommentBox = () => {
   return (
-    <div className="shadow-commentBox rounded-lg p-8 border">
+    <div className=" rounded-lg p-8 border my-8 ">
       <h5 className="text-gray-700 font-bold text-lg">نقد و بررسی‌ها</h5>
       <p className="paragraph text-[12px] mt-5 mb-7">
         هیچ دیدگاهی برای این محصول نوشته نشده است.

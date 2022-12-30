@@ -20,9 +20,12 @@ body {
     @apply text-2xl text-gray-600 mb-6 text-center;
   }
   .paragraph {
-    @apply text-sm text-gray-600 text-justify;
+    @apply text-sm text-gray-600 text-justify md:text-right;
   }
   .requierd {
     @apply text-mainColor text-sm mr-1;
+  }
+  .img {
+    @apply w-full h-full mx-auto;
   }
 }
