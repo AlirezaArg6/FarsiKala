@@ -25,7 +25,7 @@ export const ArticleInfo = () => {
           className="img object-cover"
         />
         {/* overlay  */}
-        <div className="absolute top-0 right-0 left-0 bottom-0 bg-zinc-800/90 flex flex-col items-center justify-center">
+        <div className="absolute top-0 right-0 left-0 bottom-0 p-2 bg-zinc-800/90 flex flex-col items-center justify-center">
           <h1 className="text-white text-4xl font-bold text-center">
             گزیده نقدهای فیلم «پروژه آدام»؛ تظاهر به جاه‌طلبی
           </h1>

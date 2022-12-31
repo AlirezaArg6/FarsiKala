@@ -57,11 +57,11 @@ export const ArticleBoxArticles = () => {
             نویسنده سایت &nbsp;/
           </li>
 
-          <li className="flex items-center mr-4 text-[12px] text-gray-700">
+          <li className="flex items-center mr-3 text-[12px] text-gray-700">
             <RiArticleLine className="ml-2" size={14} />
             وبلاگ &nbsp;/
           </li>
-          <li className="flex items-center mr-4 text-[12px] text-gray-700">
+          <li className="flex items-center mr-3 text-[12px] text-gray-700">
             <AiOutlineClockCircle className="ml-2" size={14} />
             دی 6 , 1400
           </li>

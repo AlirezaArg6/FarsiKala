@@ -7,8 +7,8 @@ import Navbar from "../../Components/Navbar/Navbar";
 export const Articles = () => {
   return (
     <>
-      <Navbar />
-      <h5 className="text-grayy-700 text-xl font-bold section-container">
+      <Navbar />{" "}
+      <h5 className="text-gray-700 text-xl font-bold section-container pt-[100px] md:pt-4">
         وبلاگ
       </h5>
       <BreadCrumb
@@ -16,6 +16,7 @@ export const Articles = () => {
           { id: 1, name: "صفحه اصلی", to: "/" },
           { id: 2, name: "مقالات", to: "/" },
         ]}
+        padding={false}
       />
       {/*  container */}
       <div className="section-container">

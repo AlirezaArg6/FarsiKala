@@ -1,8 +1,8 @@
 import React from "react";
 
-export const BreadCrumb = ({ links }) => {
+export const BreadCrumb = ({ links, padding }) => {
   return (
-    <div className="section-container pt-[100px] md:pt-0">
+    <div className={`section-container ${padding && "pt-[100px]"}  md:pt-0`}>
       <nav className="bg-[#f7f7f7] rounded-lg px-6 py-4">
         {links.map((link) => (
           <a
