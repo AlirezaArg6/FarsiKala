@@ -28,4 +28,8 @@ body {
   .img {
     @apply w-full h-full mx-auto;
   }
+
+  .filter-header {
+    @apply text-gray-600 mb-3  font-bold;
+  }
 }

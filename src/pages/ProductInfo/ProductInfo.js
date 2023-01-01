@@ -16,6 +16,7 @@ export const ProductInfo = () => {
           { id: 2, name: "مد و پوشاک", to: "/" },
           { id: 3, name: "کفش آدیداس", to: "/" },
         ]}
+        padding={true}
       />
       <section id="product-info">
         {/* container */}

@@ -16,7 +16,7 @@ export const MostViewdProducts = () => {
           {/* product 1 */}
           <div className="border">
             <ProductBox>
-              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md ">
+              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md duration-200 hover:border-mainColor hover:-translate-y-1 hover:text-mainColor">
                 انتخاب گزینه ها
               </button>
             </ProductBox>
@@ -24,7 +24,7 @@ export const MostViewdProducts = () => {
           {/* product 2 */}
           <div className="border">
             <ProductBox>
-              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md ">
+              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md duration-200 hover:border-mainColor hover:-translate-y-1 hover:text-mainColor">
                 انتخاب گزینه ها
               </button>
             </ProductBox>
@@ -32,7 +32,7 @@ export const MostViewdProducts = () => {
           {/* product 3 */}
           <div className="border">
             <ProductBox>
-              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md ">
+              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md duration-200 hover:border-mainColor hover:-translate-y-1 hover:text-mainColor">
                 انتخاب گزینه ها
               </button>
             </ProductBox>
@@ -40,7 +40,7 @@ export const MostViewdProducts = () => {
           {/* product 4 */}
           <div className="border">
             <ProductBox>
-              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md ">
+              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md duration-200 hover:border-mainColor hover:-translate-y-1 hover:text-mainColor">
                 انتخاب گزینه ها
               </button>
             </ProductBox>
@@ -48,7 +48,7 @@ export const MostViewdProducts = () => {
           {/* product 5 */}
           <div className="border">
             <ProductBox>
-              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md ">
+              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md duration-200 hover:border-mainColor hover:-translate-y-1 hover:text-mainColor">
                 انتخاب گزینه ها
               </button>
             </ProductBox>
@@ -56,7 +56,7 @@ export const MostViewdProducts = () => {
           {/* product 6 */}
           <div className="border">
             <ProductBox>
-              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md ">
+              <button className="border border-gray-400 p-2 px-4 text-gray-500 text-sm rounded-md duration-200 hover:border-mainColor hover:-translate-y-1 hover:text-mainColor">
                 انتخاب گزینه ها
               </button>
             </ProductBox>

@@ -85,7 +85,7 @@ export default function Navbar() {
         <div className="flex justify-between w-full">
           {" "}
           <a href="" className="flex items-center" className="mr-2">
-            <img src="./icon.png" alt="" className="w-36 lg:w-44 md:w-40 " />
+            <img src="/icon.png" alt="" className="w-36 lg:w-44 md:w-40 " />
           </a>
           <button className="border p-1 rounded-lg border-black  ">
             <AiOutlineClose
