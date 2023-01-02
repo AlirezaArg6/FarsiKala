@@ -315,7 +315,7 @@ export const ProductInfo = () => {
                 </ul>
               </div>
               {/* sticky add to cart */}
-              <div className="bg-[#f7f7f7] rounded-lg border p-6 mt-6 lg:sticky lg:top-5">
+              <div className="bg-[#f7f7f7] rounded-lg border p-6 mt-6 lg:sticky lg:top-5 lg:right-5">
                 <h5>کفش پیاده روی مردانه آدیداس</h5>
                 {/* features */}
                 <ul className="list-disc py-3 px-8">

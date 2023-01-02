@@ -24,23 +24,47 @@ export const CommentBox = () => {
             <span className="requierd">*</span>
           </label>
         </div>
-        <textarea
-          name=""
-          id=""
-          rows={8}
-          className="border border-gray-300 rounded-md md:col-span-2 px-3 py-2 focus:border-mainColor outline-none resize-none"
-        ></textarea>
-        <input
-          type="text"
-          className="border border-gray-300 rounded-md px-3 py-2 focus:border-mainColor outline-none"
-        />
-        <input
-          type="text"
-          className="border border-gray-300 rounded-md px-3 py-2 focus:border-mainColor outline-none"
-        />
+        {/* text area form field */}
+        <div className="md:col-span-2 ">
+          <label htmlFor="" className="  paragraph text-sm ">
+            دیدگاه شما
+            <span className="requierd">*</span>
+          </label>
+          <textarea
+            name=""
+            id=""
+            rows={8}
+            className="border border-gray-300 w-full rounded-md mt-3  px-3 py-2 focus:border-mainColor outline-none resize-none"
+          ></textarea>
+        </div>
+        {/* input form field */}
+        <div>
+          <label htmlFor="" className="paragraph text-sm">
+            نام <span className="requierd">*</span>
+          </label>
+          <input
+            type="text"
+            className="border border-gray-300 w-full mt-3 rounded-md px-3 py-2 focus:border-mainColor outline-none"
+          />
+        </div>
+        {/* input form field */}
+        <div>
+          <label htmlFor="" className="paragraph text-sm">
+            پست الکترونیک <span className="requierd">*</span>
+          </label>
+          <input
+            type="text"
+            className="border border-gray-300 w-full mt-3 rounded-md px-3 py-2 focus:border-mainColor outline-none"
+          />
+        </div>
         {/* remember */}
         <div className="md:col-span-2 flex items-center">
-          <input type="checkbox" name="" id="" className="ml-3" />
+          <input
+            type="checkbox"
+            name=""
+            id=""
+            className="ml-3 accent-mainColor/90"
+          />
           <span className="paragraph text-[12px]">
             ذخیره نام، ایمیل و وبسایت من در مرورگر برای زمانی که دوباره دیدگاهی
             می‌نویسم.

@@ -62,7 +62,7 @@ export default function Navbar() {
           <div className="border-b border-gray-300"></div>
           {/* large screen menus and submenus */}
           {/* container */}
-          <div className="hidden container mx-auto px-8 p-3 items-center  justify-between relative lg:flex lg:px-2 ">
+          <div className="hidden container mx-auto px-8 p-3 items-center justify-between relative lg:flex lg:px-2 ">
             <NavLinksLargeScreens />
             <p className="text-sm text-gray-600">
               ارسال رایگان برای سفارش های بالا 200 هزار تومان
