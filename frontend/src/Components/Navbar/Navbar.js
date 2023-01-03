@@ -55,13 +55,20 @@ export default function Navbar() {
             <div className="flex items-center">
               <a
                 href=""
-                className="flex items-center border text-gray-600 p-2  px-3 text-sm rounded-md border-gray-300"
+                className="hidden flex items-center border text-gray-600 p-2  px-3 text-sm rounded-md border-gray-300 sm:flex"
               >
-                <HiOutlineLogin size={20} className="ml-2 text-black" />
+                <HiOutlineLogin size={20} className="ml-2 text-black " />
                 ورود | ثبت نام
               </a>
+              <a
+                href=""
+                className="flex items-center border text-gray-600 p-2  px-3 text-sm rounded-md border-gray-300 sm:hidden"
+              >
+                <HiOutlineLogin size={20} className="ml-2 text-black " />
+                ورود
+              </a>
               {/* border */}
-              <div className="border mx-2  rotate-90 w-6"></div>
+              <div className="border  rotate-90 w-6 sm:mx-2"></div>
               <BiShoppingBag size={28} />
             </div>
           </div>
