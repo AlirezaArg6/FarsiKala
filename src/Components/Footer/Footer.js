@@ -17,7 +17,7 @@ export const Footer = () => {
           {/* right side */}
           <div className="">
             <img src="/farsikala.png" alt="" className="w-40 mx-auto md:mx-0" />
-            <p className="text-gray-500 text-sm mt-4 font-light">
+            <p className="text-gray-500 text-sm mt-4 font-light max-w-md text-center md:text-right">
               تلفن پشتیبانی: 12345678 - ۰۲۱ | 123456789 - ۰۲۱ | هفت روز هفته، ۲۴
               ساعت شبانه‌روز پاسخگوی شما هستیم.
             </p>

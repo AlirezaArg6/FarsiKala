@@ -13,7 +13,7 @@ export const Products = () => {
         {/* main content */}
         <div className="lg:flex ">
           {/* right side */}
-          <div className="hidden lg:block lg:w-[16%] lg:sticky lg:top-[400px]">
+          <div className="hidden lg:block lg:w-[16%] lg:sticky lg:top-5  lg:h-screen">
             {/* filters */}
             {/* container */}
             <div className="flex flex-col space-y-6 ">

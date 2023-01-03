@@ -9,9 +9,6 @@ module.exports = {
       boxShadow: {
         commentBox: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
       },
-      screens: {
-        sm2: "550px",
-      },
     },
   },
   plugins: [require("tailwindcss-rtl"), require("@tailwindcss/line-clamp")],

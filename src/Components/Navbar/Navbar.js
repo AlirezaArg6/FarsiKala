@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { FaRegUserCircle } from "react-icons/fa";
-import { HiOutlineHeart } from "react-icons/hi";
+import { HiOutlineHeart, HiOutlineLogin } from "react-icons/hi";
 import { ImShuffle } from "react-icons/im";
 import { BiShoppingBag, BiSearch } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -39,7 +39,7 @@ export default function Navbar() {
               <div
                 className={`hidden w-[460px] items-center ${
                   shouldSerachInputBgChange ? "bg-white" : "bg-zinc-200"
-                } duration-300 mr-3 border-2 bborder-zinc-200  p-2 rounded-lg lg:flex`}
+                } duration-300 mr-3 border-2 border-zinc-200  p-2 rounded-lg lg:flex`}
               >
                 <input
                   className="w-full bg-transparent placeholder:text-zinc-600 focus:outline-none"
@@ -53,13 +53,19 @@ export default function Navbar() {
             </div>
             {/* left side */}
             <div className="flex items-center">
-              <BiShoppingBag size={28} className="mr-2 " />
-              <ImShuffle size={28} className="mr-2 " />
-              <HiOutlineHeart size={28} className="mr-2 " />
-              <FaRegUserCircle size={28} className="mr-2 " />
+              <a
+                href=""
+                className="flex items-center border text-gray-600 p-2  px-3 text-sm rounded-md border-gray-300"
+              >
+                <HiOutlineLogin size={20} className="ml-2 text-black" />
+                ورود | ثبت نام
+              </a>
+              {/* border */}
+              <div className="border mx-2  rotate-90 w-6"></div>
+              <BiShoppingBag size={28} />
             </div>
           </div>
-          <div className="border-b border-gray-300"></div>
+          <div className="border-b border-gray-200"></div>
           {/* large screen menus and submenus */}
           {/* container */}
           <div className="hidden container mx-auto px-8 p-3 items-center justify-between relative lg:flex lg:px-2 ">
