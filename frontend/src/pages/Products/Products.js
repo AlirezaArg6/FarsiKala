@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { AiFillFilter, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { BreadCrumb } from "../../Components/BreadCrumb/BreadCrumb";
 import { Footer } from "../../Components/Footer/Footer";
@@ -6,17 +7,33 @@ import Navbar from "../../Components/Navbar/Navbar";
 import { ProductBoxProductsPage } from "../../Components/ProductBoxProductsPage/ProductBoxProductsPage";
 
 export const Products = () => {
+  const [isSidebarShowing, setIsSidebarShowing] = useState(false);
   return (
     <>
       <Navbar />
       {/* container */}
       <div className="section-container">
         {/* main content */}
-        <div className="lg:flex ">
+        <div className="relative lg:flex ">
           {/* right side */}
-          <div className="hidden lg:block lg:w-[16%] lg:sticky lg:top-5  lg:h-screen">
+          {/* overlay */}
+          {isSidebarShowing && (
+            <div className="fixed top-0 left-0 bottom-0 right-0 bg-black/70 z-40 lg:hidden"></div>
+          )}
+          <div
+            className={`fixed overflow-y-auto duration-200 p-10  bg-white w-[70%] z-50 top-0 ${
+              isSidebarShowing ? "right-0" : "-right-[100%]"
+            } h-screen md:w-[54%]  lg:block lg:bg-transparent lg:p-0 lg:overflow-hidden lg:w-[16%] lg:sticky lg:top-5  lg:h-screen`}
+          >
             {/* filters */}
             {/* container */}
+            <div className="flex justify-between mb-8 text-gray-700 font-bold lg:hidden ">
+              <h5 className="text-lg">فیلتر های موجود</h5>
+              <AiOutlineClose
+                size={24}
+                onClick={() => setIsSidebarShowing(false)}
+              />
+            </div>
             <div className="flex flex-col space-y-6 ">
               {/* category filter */}
               <div>
@@ -160,10 +177,19 @@ export const Products = () => {
                 </Link>
               </nav>
             </div>
-            <div className="flex justify-between mt-14 items-center">
-              <span className="text-gray-500 text-[12px]">
-                نمایش 1–16 از 28 نتیجه
-              </span>
+            <div className="flex flex-col space-y-4 justify-between mt-14 items-center md:flex-row md:space-y-0">
+              <div className="flex flex-col space-y-4 items-center md:flex-row md:space-y-0">
+                <span
+                  className="flex items-center ml-4 text-gray-900 text-[12px] border p-2 rounded lg:hidden"
+                  onClick={() => setIsSidebarShowing(true)}
+                >
+                  <AiFillFilter className="ml-2" />
+                  فیلتر کنید
+                </span>
+                <span className="text-gray-500 text-[12px]">
+                  نمایش 1–16 از 28 نتیجه
+                </span>
+              </div>
               <select
                 name=""
                 id=""
