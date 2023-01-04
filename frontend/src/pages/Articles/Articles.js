@@ -14,7 +14,7 @@ export const Articles = () => {
       <BreadCrumb
         links={[
           { id: 1, name: "صفحه اصلی", to: "/" },
-          { id: 2, name: "مقالات", to: "/" },
+          { id: 2, name: "مقالات", to: "/articles/1" },
         ]}
         padding={false}
       />

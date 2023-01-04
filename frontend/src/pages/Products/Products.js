@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BreadCrumb } from "../../Components/BreadCrumb/BreadCrumb";
 import { Footer } from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
@@ -151,12 +152,12 @@ export const Products = () => {
             {/* breadcrumb */}
             <div>
               <nav>
-                <a href="" className="text-sm text-mainColor/90">
+                <Link to={"/"} className="text-sm text-mainColor/90">
                   صفحه اصلی &nbsp; <span className="text-black">/</span>
-                </a>
-                <a href="" className="text-sm">
+                </Link>
+                <Link to={"/products/1"} className="text-sm">
                   &nbsp; فروشگاه
-                </a>
+                </Link>
               </nav>
             </div>
             <div className="flex justify-between mt-14 items-center">
